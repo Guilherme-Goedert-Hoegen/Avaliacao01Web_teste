@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Minha Empresa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Minha Empresa</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cadastro.html" class="active">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h2>Cadastro de Usuário</h2>
+    <form id="cadastroForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br><br>
+
+      <label for="age">Idade:</label>
+      <input type="number" id="age" required><br><br>
+
+      <label for="gender">Gênero:</label>
+      <input type="radio" id="male" name="gender" value="male"> Masculino
+      <input type="radio" id="female" name="gender" value="female"> Feminino<br><br>
+
+      <label for="newsletter">Receber Newsletter:</label>
+      <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+      <label for="date">Data de Nascimento:</label>
+      <input type="date" id="date" required><br><br>
+
+      <label for="fontStyle">Estilo de Fonte:</label>
+      <select id="fontStyle" name="fontStyle">
+        <option value="default">Padrão</option>
+        <option value="custom">Personalizado</option>
+      </select><br><br>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Minha Empresa</p>
+    <p>Integrantes: Nome 1, Nome 2, Nome 3</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
